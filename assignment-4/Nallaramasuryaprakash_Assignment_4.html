@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        #Tablesection
+        table{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            #row1
+            {
+                border: 1px solid black;
+                border-collapse: collapse;
+                width: 158px;
+                height: 50px;
+                
+            }
+            #row2
+            {
+                border: 1px solid black;
+                border-collapse: collapse;
+                height: 50px;
+                text-align: center;
+                width: 20px;
+            }
+            #row3
+            {
+                border: 1px solid black;
+                border-collapse: collapse;
+                width: 290px;
+                height: 50px;
+                
+            }
+    </style>
+
+    <body>
+        <form method="get" action="index.php" onsubmit="alert('submitted')">
+        <h2>Talk to Expert Registration Form</h2><hr>
+        <p style="position: absolute; left: 130px";>Talk to Expert Registration Form</p><br>
+        <br>
+        <div id="Tablesection">
+        <table>
+            <tr>
+                <td id="row1">&nbsp Enter your First Name</td>
+                <td id="row2">:</td>
+                <td id="row3">&nbsp <input type="text" name="firstname"  id="firstname" placeholder="Enter your first name" required></td>
+            </tr>
+            <tr>
+                <td id="row1">&nbsp Enter your Last Name</td>
+                <td id="row2">:</td>
+                <td id="row3">&nbsp <input type="text" name="lastname"  id="lastname" placeholder="Enter your last name" required></td>
+            </tr>
+            <tr>
+                <td id="row1">&nbsp I am pursuing</td>
+                <td id="row2">:</td>
+                <td id="row3">&nbsp CSE<input type="radio" name="Branch" value="CSE">
+                              &nbsp ECE<input type="radio" name="Branch" value="ECE">
+                              &nbsp Mech<input type="radio" name="Branch" value="Mech">
+                              &nbsp Other<input type="radio" name="Branch" value="Other">
+                </td>
+            </tr>
+            <tr>
+                <td id="row1">&nbsp I am good at</td>
+                <td id="row2">:</td>
+                <td id="row3">&nbsp JAVA<input type="checkbox" name="skills" value="JAVA" >
+                              &nbsp PYTHON<input type="checkbox" name="skills" value="PYTHON" >
+                              &nbsp HTML<input type="checkbox" name="skills" value="HTML" >
+                              &nbsp JS<input type="checkbox" name="skills" value="JS" >
+                </td>
+            </tr>
+            <tr>
+                <td id="row1">&nbsp Mobile number</td>
+                <td id="row2">:</td>
+                <td id="row3">&nbsp <input type="text" name="phone" placeholder="Enter your number" pattern="\d{10}" required autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td id="row1">&nbsp Graduation Year</td>
+                <td id="row2">:</td>
+                <td id="row3">&nbsp 
+                    <select aria-required="true">
+                    <option>Select Year</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td id="row1">&nbsp Any queries?</td>
+                <td id="row2">:</td>
+                <td  style="height: 100px;">&nbsp <textarea name="query" rows="4" cols="20" placeholder="Rows-4, cols-20" required></textarea></td>
+            </tr>
+            <tr id ="row1">
+                <td style="column-span: all;">&nbsp<button>Submit</button></td>
+            </tr>
+
+        </div>
+        </table> 
+        </form>
+    </body>
+    </head>
+</html>
